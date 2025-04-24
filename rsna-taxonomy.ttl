@@ -1,0 +1,127 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rsna: <https://github.com/kurtcagle/rsna/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+rsna:Taxonomy
+    a skos:ConceptScheme ;
+    dct:title "RSNA Radiology Taxonomy" ;
+    dct:description "A comprehensive taxonomy of radiology-related skills and concepts" .
+
+## Top Level Concepts ##
+
+rsna:6076790217260014660
+    a skos:Concept ;
+    skos:prefLabel "RSNA" ;
+    skos:notation "rsna" ;
+    skos:topConceptOf rsna:Taxonomy ;
+    skos:definition "Root concept for RSNA taxonomy" ;
+    rsna:nodeId "6076790217260014660" ;
+    rsna:path "rsna" .
+
+## Skills_BGT Hierarchy ##
+
+rsna:5808873277523004892
+    a skos:Concept ;
+    skos:prefLabel "Skills BGT" ;
+    skos:notation "skills_bgt" ;
+    skos:broader rsna:6076790217260014660 ;
+    skos:definition "Skills related to background knowledge and general training" ;
+    rsna:nodeId "5808873277523004892" ;
+    rsna:path "rsna.skills_bgt" .
+
+rsna:5808873278506230635
+    a skos:Concept ;
+    skos:prefLabel "Skills" ;
+    skos:notation "skills" ;
+    skos:broader rsna:5808873277523004892 ;
+    skos:definition "General skills category" ;
+    rsna:nodeId "5808873278506230635" ;
+    rsna:path "rsna.skills_bgt.skills" .
+
+## Staff Development ##
+
+rsna:4561360798422349110
+    a skos:Concept ;
+    skos:prefLabel "Staff Development" ;
+    skos:altLabel "professional development" ;
+    skos:broader rsna:5808873278506230635 ;
+    skos:definition "Professional development is learning to earn or maintain professional credentials such as academic degrees to formal coursework, conferences and informal learning opportunities situated in practice." ;
+    rsna:nodeId "4561360798422349110" ;
+    rsna:path "rsna.skills_bgt.skills.staff_development" .
+
+## Leadership ##
+
+rsna:4561360797059639035
+    a skos:Concept ;
+    skos:prefLabel "Leadership" ;
+    skos:altLabel "leadership style", "leadership skills", "leadership development", "leadership psychology", "leadership method", "effective leadership", "leadership training", "leadership qualities" ;
+    skos:broader rsna:5808873278506230635 ;
+    skos:definition "Leadership is both a research area and a practical skill encompassing the ability of an individual or organization to lead or guide other individuals, teams, or entire organizations." ;
+    rsna:nodeId "4561360797059639035" ;
+    rsna:path "rsna.skills_bgt.skills.leadership" .
+
+## Stakeholder Management ##
+
+rsna:5048472870783266343
+    a skos:Concept ;
+    skos:prefLabel "Stakeholder Management" ;
+    skos:altLabel "project stakeholder", "stakeholder management", "managing stakeholders", "stakeholder engagement" ;
+    skos:broader rsna:5808873278506230635 ;
+    skos:definition "Working experience of Stakeholder Management, which is a critical component to the successful delivery of any project, programme or activity. A stakeholder is any individual, group or organization that can affect, be affected by, or perceive itself to be affected by a programme. Stakeholder management creates positive relationships with stakeholders through the appropriate management of their expectations and agreed objectives." ;
+    rsna:nodeId "5048472870783266343" ;
+    rsna:path "rsna.skills_bgt.skills.stakeholder_management" .
+
+## Diversity Planning ##
+
+rsna:4610106773552492265
+    a skos:Concept ;
+    skos:prefLabel "Diversity Planning" ;
+    skos:altLabel "diversity planning", "cultural diversity", "workplace diversity", "diversity and inclusion", "diverse workforce" ;
+    skos:broader rsna:5808873278506230635 ;
+    skos:definition "Working experience of Diversity PlanningDiversity Planning involves several steps to ensure that the institution is prepared to create a diversity plan, recognizes its role within a diverse community, and addresses diversity in a meaningful and relevant way. There are boradly thought to be six elements essential for a successful diversity plan. Those elements include: A definition of diversity for the organization, an assessment of need or justification for the diversity plan, a mission or vision for the diversity of the organization, a statement of priorities or goals, a delegation of responsibilities towards achievement of the plan, and a statement of accountability." ;
+    rsna:nodeId "4610106773552492265" ;
+    rsna:path "rsna.skills_bgt.skills.diversity_planning" .
+
+## Business Strategy ##
+
+rsna:4561360796421194272
+    a skos:Concept ;
+    skos:prefLabel "Business Strategy" ;
+    skos:altLabel "strategic business unit", "SBU business", "business strategies", "business strategy", "business priorities", "enterprise strategy", "corporate strategy" ;
+    skos:broader rsna:5808873278506230635 ;
+    skos:definition "Strategic management is the formulation and implementation of the major goals and initiatives taken by a company's top management on behalf of owners, based on consideration of resources and an assessment of the internal and external environments in which the organization competes." ;
+    rsna:nodeId "4561360796421194272" ;
+    rsna:path "rsna.skills_bgt.skills.business_strategy" .
+
+## Project Management ##
+
+rsna:4561360797899484674
+    a skos:Concept ;
+    skos:prefLabel "Project Management" ;
+    skos:altLabel "project management software", "project portfolio management", "earned value management", "EVM management", "project management life cycle", "software project management", "project risk management", "project closure", "project management skills" ;
+    skos:broader rsna:5808873278506230635 ;
+    skos:definition "Project management is the discipline of initiating, planning, executing, controlling, and closing the work of a team to achieve specific goals and meet specific success criteria." ;
+    rsna:nodeId "4561360797899484674" ;
+    rsna:path "rsna.skills_bgt.skills.project_management" .
+
+## People Development ##
+
+rsna:4613691544269197433
+    a skos:Concept ;
+    skos:prefLabel "People Development" ;
+    skos:altLabel "people development", "employee development" ;
+    skos:broader rsna:5808873278506230635 ;
+    skos:definition "Development of employees within an organization" ;
+    rsna:nodeId "4613691544269197433" ;
+    rsna:path "rsna.skills_bgt.skills.people_development" .
+
+## Business Development ##
+
+rsna:5048472729764952461
+    a skos:Concept ;
+    skos:prefLabel "Business Development" ;
+    skos:altLabel "business development" ;
+    skos:broader rsna:5808873278506230635 ;
+    skos:definition "Business development entails tasks and processes to develop and implement growth opportunities within and between organizations." ;
+    rsna:nodeId "5048472729764952461" ;
+    rsna:path "rsna.skills_bgt.skills.business_development" .
